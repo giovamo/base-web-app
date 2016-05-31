@@ -1,0 +1,10 @@
+{% extends "templates/base-layout.html" %}
+
+{%block content%}
+
+<h1>HOME PAGE</h1>
+{% if user %}
+    <br>
+    <h2>Welcome, {{user.name}}</h2>
+{% endif %}
+{% endblock %}
